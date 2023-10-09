@@ -64,3 +64,13 @@ footer {
         margin-bottom: 20px;
     }
 }
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.section.active {
+    opacity: 1;
+    transform: translateY(0);
+}
