@@ -5,6 +5,10 @@ body {
     padding: 0;
 }
 
+p {
+     text-align: justify;
+}
+
 header {
     background-color: #0074D9;
     color: #fff;
