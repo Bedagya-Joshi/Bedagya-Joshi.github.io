@@ -7,85 +7,150 @@
     <meta name="description" content="I'm Bedagya Raj Joshi, a computer applications student based in Kathmandu, Nepal. Explore my portfolio of Python, Linux, and scripting projects." />
     <meta name="keywords" content="Bedagya Raj Joshi, Computer Applications, Ethical Hacking, Kathmandu, Nepal, Portfolio, Python, Linux, Scripting">
     <meta name="author" content="Bedagya Raj Joshi">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Italianno' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Bedagya Raj Joshi</h1>
-        <p>Computer Applications Student & Ethical Hacker</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <!-- Section 1 -->
-        <section class="section fade-in">
-            <div>
-                <h2>How I Started</h2>
-                <p>My name is Bedagya Raj Joshi. I am currently a student studying in Deerwalk Institute of Technology.
-                I am taking Bachelors in Computer Applications since I have been interested in coding since a young age.
-                My main interest in coding started from QBasic and then I switched to other languages like python and Java.
-                Scripting languages like Python peaked my interested and I started looking into bash scripts and Linux which then took me to the path of learning ethical Hacking
-                or Cyber Security. </p>
+    <section id="landing">
+        <div id="image">
+            <img src="./Assets/387338097_1046351639877347_8568731532965870648_n.jpg" id="profile-picture" alt="profile picture">
+        </div>
+        <div id="text-container"> 
+            <p>BEDAGYA RAJ JOSHI</p>
+            <p>Dev Ops | Networking | Software Development</p>
+        </div>
+        <div id="social-media">
+            <img src="./Assets/linkedin.png" alt="Linkedin" onclick="openSocialMedia('linkedin')">
+            <img src="./Assets/github.png" alt="Github" onclick="openSocialMedia('github')">
+            <a href="mailto:bedagyawork@gmail.com" style="text-decoration: none;">
+                <img src="./Assets/gmail_icon-icons.com_59877.png" alt="Gmail" href="mailto:bedagyawork@gmail.com">
+            </a>
+            <img id="whatsapp" src="./Assets/Black-and-white-Whatsapp-logo-vector-PNG.png" alt="whatsapp" onclick="openWhatsApp()">
+        </div>
+    </section>
+    <section id="intro">
+        <h1>About me</h1>
+        <div id="text-container-about">
+            <div id="info">
+                <p>Full Name: Bedagya Raj Joshi</p><br><br><br><br>
+                <p>Date of Birth: October 3 2001</p><br><br><br><br>
+                <p>Email: bedagyawork@gmail.com</p><br><br><br><br>
+                <p>Website: </p><br><br><br><br>
+                <p>Address: Bhangal, Budhanilkantha,
+                        Nepal NP 44600
+                </p>
             </div>
-            <img src="img.jpg" alt="pic1">
-        </section>
-
-        <!-- Section 2 -->
-        <section class="section fade-in">
-            <img src="img.jpg" alt="pic2">
-            <div>
-                <h2>What Am I Currently Doing</h2>
-                <p>I am currently on my 4th year of Bachelors in Computer and Application studying in Deerwalk Institute of Technology. I have learned various of languages like HTML, CSS, JAVA, PYTHON, C, C++. I am also trying to broaden my Linux knowledge and bash sctipting as well.</p>
+            <div id="about">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec massa non odio vestibulum fermentum vel et mi. Donec vel blandit nunc. Mauris tristique elit vel feugiat tristique. Integer ut risus ut urna tincidunt tincidunt vitae mattis enim. Donec eleifend vitae felis non ornare. Vivamus sit amet erat enim. Nulla ornare posuere elementum. Curabitur semper arcu eget neque molestie bibendum. Duis vehicula nunc nec porta venenatis. Vestibulum fringilla nisi sed ante molestie viverra quis id elit. Mauris facilisis varius efficitur. Morbi in mollis ex. 
+                </p>
+                <p>Vivamus fringilla erat ut scelerisque viverra. Sed condimentum lacus vitae tellus blandit, non condimentum massa laoreet. Etiam ut nisl varius, auctor erat vitae, ullamcorper sapien. Duis non blandit sapien, sit amet facilisis turpis. Integer porta, nisi at aliquam malesuada, dolor purus semper enim, at mattis justo sem sed mauris. Aliquam iaculis fermentum sollicitudin. Mauris lacinia elit faucibus est pharetra, non imperdiet tortor dapibus. Sed placerat ante vel ullamcorper efficitur.</p>
             </div>
-        </section>
-
-        <!-- Section 3 -->
-        <section class="section fade-in">
-            <div>
-                <h2>What Is My Future Plan</h2>
-                <p>I am aiming to get into Cyber Security field as I am immensely interested in Ethical Hacking and have a decent knowledge of Python and Linux. My mail goal is to be efficient in networking and security to help compinies build and maintain a secure foundation for themselves and aviod any data breaches.</p>
-            </div>
-            <img src="img.jpg" alt="pic3">
-        </section>
-        <section class="section fade-in" style="align-items: flex-start;">
-    <div class="skills">
-        <h1>Skills</h1>
-        <ul>
-            <li>Python</li>
-            <li>Cyber Security</li>
-            <li>Linux</li>
-            <li>React</li>
-            <li>JavaScript</li>
-            <li>Java</li>
-            <li>UI/UX</li>
-            <li>Networking</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Video Editing</li>
-            <li>Graphics Design</li>
-        </ul>
+        </div>
+    </section>
+    <section id="journey">
+        <h1>How I started my IT journey</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec massa non odio vestibulum fermentum vel et mi. Donec vel blandit nunc. Mauris tristique elit vel feugiat tristique. Integer ut risus ut urna tincidunt tincidunt vitae mattis enim. Donec eleifend vitae felis non ornare. Vivamus sit amet erat enim. Nulla ornare posuere elementum. Curabitur semper arcu eget neque molestie bibendum. Duis vehicula nunc nec porta venenatis. Vestibulum fringilla nisi sed ante molestie viverra quis id elit. Mauris facilisis varius efficitur. Morbi in mollis ex. Vivamus fringilla erat ut scelerisque viverra. Sed condimentum lacus vitae tellus blandit, non condimentum massa laoreet. Etiam ut nisl varius, auctor erat vitae, ullamcorper sapien. Duis non blandit sapien, sit amet facilisis turpis. Integer porta, nisi at aliquam malesuada, dolor purus semper enim, at mattis justo sem sed mauris. Aliquam iaculis fermentum sollicitudin. Mauris lacinia elit faucibus est pharetra, non imperdiet tortor dapibus. Sed placerat ante vel ullamcorper efficitur.</p>
+        <button onclick="downloadCV()">Download CV</button>
+    </section>
+    <section id="education">
+        <h1>Education</h1>
+        <div class="container">
+            <img src="/Assets/cap1.png" alt="education-cap" ><br><br><br><br>
+            <img src="/Assets/cap1.png" alt="education-cap" ><br><br><br><br>
+            <img src="/Assets/cap1.png" alt="education-cap" >
+        </div>
+    </section>
+    <section id="workExp">
+        <h1>Work Experience</h1>
+        <div class="container">
+            <img src="/Assets/job2.png" alt="education-cap" ><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <img src="/Assets/job2.png" alt="education-cap" >
+        </div>
+    </section>
+    <section class="skills-section">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>HTML</h3>
+        <div class="skill-bar-container">
+          <div class="skill-bar" data-skill-level="90"></div>
+          <span class="skill-level">90%</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>CSS</h3>
+        <div class="skill-bar-container">
+          <div class="skill-bar" data-skill-level="80"></div>
+          <span class="skill-level">80%</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>JavaScript</h3>
+        <div class="skill-bar-container">
+          <div class="skill-bar" data-skill-level="70"></div>
+          <span class="skill-level">70%</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Python</h3>
+        <div class="skill-bar-container">
+          <div class="skill-bar" data-skill-level="60"></div>
+          <span class="skill-level">60%</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>.Net</h3>
+        <div class="skill-bar-container">
+          <div class="skill-bar" data-skill-level="50"></div>
+          <span class="skill-level">50%</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Linux</h3>
+        <div class="skill-bar-container">
+          <div class="skill-bar" data-skill-level="80"></div>
+          <span class="skill-level">80%</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Bash Script</h3>
+        <div class="skill-bar-container">
+          <div class="skill-bar" data-skill-level="70"></div>
+          <span class="skill-level">70%</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>DevOps</h3>
+        <div class="skill-bar-container">
+          <div class="skill-bar" data-skill-level="60"></div>
+          <span class="skill-level">60%</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Java</h3>
+        <div class="skill-bar-container">
+          <div class="skill-bar" data-skill-level="50"></div>
+          <span class="skill-level">50%</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>C/C++</h3>
+        <div class="skill-bar-container">
+          <div class="skill-bar" data-skill-level="40"></div>
+          <span class="skill-level">40%</span>
+        </div>
+      </div>
     </div>
-    <div class="projects">
-        <h1>Projects</h1>
-        <ul>
-            <li>Python Automation</li>
-            <li>Budget Keeper</li>
-            <li>Employee Management System</li>
-            <li>Movie Recommendation System</li>
-        </ul>
-    </div>
-</section>
-
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Bedagya Raj Joshi</p>
-    </footer>
+  </section>
+    <section id="portfolio">
+        <h1>Portfolio</h1>
+    </section>
+    <section id="contactMe">
+        <h1>Contact Me</h1>
+    </section>
+    <section id="footer">
+        <p>© 2023 Bedagya Raj Joshi</p>
+    </section>
     <script src="js/script.js"></script>
 </body>
 </html>

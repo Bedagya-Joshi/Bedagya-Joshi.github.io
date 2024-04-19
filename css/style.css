@@ -1,0 +1,239 @@
+body{
+    margin: 0;
+}
+
+section{
+    height: 100vh;
+}
+
+#landing,
+#intro,
+#journey,
+#education,
+#workExp,
+#skills,
+#portfolio,
+#contactMe,
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    padding: 0 10px;
+    height: 100vh;
+}
+
+#landing {
+    background-image: url("../Assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#profile-picture {
+    width: 150px;
+    height: 150px;
+    background-color: #ccc;
+    border-radius: 200%;
+    margin-bottom: 20px;
+    margin-top: 20vh;
+}
+
+#text-container {
+    transform: skew(-0.99turn, -5deg);
+    text-align: center;
+    color: white;
+    font-family: 'Italianno';
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+#text-container h2,
+#text-container h3 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+#social-media img:not(#whatsapp){
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+    padding:10px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#whatsapp{
+    width: 55px;
+    height: 55px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#social-media img:hover {
+    animation: pop-up ease-in-out 0.4s forwards;
+}
+
+@keyframes pop-up {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.5);
+    }
+}
+
+#text-container-about {
+    display: flex;
+}
+
+#info {
+    border: solid 1px black;
+    text-align: left;
+    line-height: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    margin-bottom:10px;
+    background-color: aliceblue;
+    text-wrap: nowrap;
+    
+}
+
+#about{
+    padding: 10px;
+    justify-content: center;
+    overflow: auto;
+}
+
+button {
+    margin-top: 50px;
+    background-color: #009dff;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #1cceff;
+}
+
+button:hover {
+    animation: pop-up ease-in-out 0.5s forwards;
+}
+
+#education, #workExp{
+    background-color: #009dff;
+}
+
+.container {
+    position: relative;
+    min-height: 80vh;
+    margin-top: 30px;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 100%;
+    background-color: black;
+}
+
+.container img {
+    position: relative;
+    margin-top: 8vh;
+    width: 80px;
+    height: 80px;
+}
+
+#workExp img {
+    position: relative;
+    margin-top: 8vh;
+    width: 100px;
+    height: 60px;
+}
+
+.skills-section {
+    text-align: center;
+    padding: 50px;
+    overflow: auto;
+}
+
+.skills-section h2 {
+    font-size: 24px;
+}
+
+.skills-grid {
+    display: grid;
+    padding:3vh;
+    grid-template-columns: repeat(5, 2fr);
+    grid-gap: 100px;
+}
+
+.skill-card {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.skill-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.skill-bar-container {
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-bar {
+    height: 100%;
+    background-color: #009bff;
+    transition: width 0.5s ease-in-out;
+}
+
+.skill-level {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#footer{
+    height: 5vh;
+    background-color: rgb(255, 11, 11) !important;
+}
+
+@keyframes pop-up {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.3);
+    }
+}
+
+@media (max-width: 768px) {
+}
+    
+@media (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) {
+}
