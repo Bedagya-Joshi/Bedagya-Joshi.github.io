@@ -1,17 +1,3 @@
-function handleScroll() {
-    const sections = document.querySelectorAll('.fade-in');
-    sections.forEach(section => {
-        const sectionTop = section.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-
-        if (sectionTop < windowHeight - 150) {
-            section.classList.add('active');
-        } else {
-            section.classList.remove('active');
-        }
-    });
-}
-
 function openWhatsApp() {
     const number = "9779844131555";
     const url = `https://wa.me/${number}`;
@@ -26,19 +12,17 @@ function openSocialMedia(platform) {
     };
     const url = urls[platform]; 
     if (url) {
-    window.open(url, "_blank"); 
+        window.open(url, "_blank"); 
     } else {
-    console.log("Invalid URL");
+        console.log("Invalid URL");
     }
 }
 
 function downloadCV() {
     const cvURL = "/Assets/Resume.pdf";
-    
     const downloadLink = document.createElement("a");
     downloadLink.href = cvURL;
     downloadLink.download = "bedagya.pdf";
-
     document.body.appendChild(downloadLink);
     downloadLink.click();
     document.body.removeChild(downloadLink);
@@ -51,6 +35,13 @@ skillBars.forEach((skillBar) => {
     skillBar.style.width = `${skillLevel}%`;
 });
 
-window.addEventListener('scroll', handleScroll);
+const scrollTopButton = document.getElementById("scroll-top-button");
 
-handleScroll();
+window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+    if (scrollY > 100) {
+        scrollTopButton.style.opacity = 1;
+    } else {
+        scrollTopButton.style.opacity = 0;
+    }
+});
