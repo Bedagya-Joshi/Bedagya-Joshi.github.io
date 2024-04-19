@@ -129,14 +129,21 @@ button:hover {
     animation: pop-up ease-in-out 0.5s forwards;
 }
 
-#education, #workExp{
-    background-color: #009dff;
-}
-
 #Edu1, #Edu2, #Edu3{
     display: flex;
     flex-direction: row;
+}
 
+#Edu1, #Edu3, #Work2{
+    padding-right:47%;
+}
+
+#Edu2{
+    padding-left: 50%;
+} 
+
+#Work1{
+    padding-left: 45.5vw;
 }
 
 #Work1, #Work2{
@@ -157,7 +164,6 @@ button:hover {
     width: 80px;
     height: 80px;
 }
-
 
 #workExp img {
     position: relative;
